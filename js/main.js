@@ -43,6 +43,7 @@ playBtn.addEventListener('click', function () {
       gridCells = 81;
       document.documentElement.style.setProperty('--col-number', '9');
    } else if (difficulty.value === 'easy') {
+      document.documentElement.style.setProperty('--col-number', '10');
       gridCells = 100;
    }
    getGrid(gridCells);
