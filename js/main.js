@@ -39,7 +39,7 @@ playBtn.addEventListener('click', function () {
       gridCells = 100;
       document.documentElement.style.setProperty('--col-number', '10');
    }
-   getGrid(gridCells);
+   printGrid(gridCells);
 });
 
 printGrid();
