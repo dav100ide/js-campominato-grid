@@ -9,6 +9,14 @@
 }
 
 /* ==========================
+      variables
+============================ */
+:root {
+   --col-number: 10;
+   --row-number: 10;
+}
+
+/* ==========================
       commons
 ============================ */
 body {
@@ -47,6 +55,29 @@ header {
 main {
    background-color: aqua;
    flex-grow: 1;
+   display: flex;
+}
+
+.board {
+   margin: auto;
+   background-color: lemonchiffon;
+   width: 31.25rem;
+   height: 31.25rem;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.board__number {
+   width: calc(100% / var(--col-number));
+   height: calc(100% / var(--col-number));
+   border: 1px solid black;
+   display: grid;
+   place-items: center;
+}
+
+.board__number-active {
+   color: whitesmoke;
+   background-color: lightskyblue;
 }
 
 /* footer */
