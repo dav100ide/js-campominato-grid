@@ -1,0 +1,55 @@
+/* ==========================
+      reset
+============================ */
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+/* ==========================
+      commons
+============================ */
+body {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 1rem;
+}
+
+.header-logo {
+   display: flex;
+   align-items: center;
+}
+
+.header-logo img {
+   width: 6rem;
+   height: 6rem;
+}
+
+#play-btn {
+   font-weight: bold;
+   padding: 0.2rem 2rem;
+   border-radius: 0.625rem;
+   cursor: pointer;
+   border: 1px solid black;
+}
+/* main */
+main {
+   background-color: aqua;
+   flex-grow: 1;
+}
+
+/* footer */
+footer {
+   padding: 1rem;
+}
