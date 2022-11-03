@@ -3,7 +3,7 @@
       functions
 ============================ */
 
-function printGrid(gridCells = 100) {
+function printGrid(gridCells = 100, gridContainer = document) {
    board.innerHTML = '';
 
    for (let i = 1; i <= gridCells; i++) {
@@ -16,7 +16,7 @@ function printGrid(gridCells = 100) {
          console.log(this.innerHTML);
       });
 
-      board.append(gridCell);
+      gridContainer.append(gridCell);
    }
 }
 
@@ -39,7 +39,7 @@ playBtn.addEventListener('click', function () {
       gridCells = 100;
       document.documentElement.style.setProperty('--col-number', '10');
    }
-   printGrid(gridCells);
+   printGrid(gridCells, board);
 });
 
-printGrid();
+printGrid(100, board);
